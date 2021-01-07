@@ -1,0 +1,42 @@
+.contact-form-wrapper {
+	padding: 80px 0;
+	background-image: url('/images/content/contact-us-banner.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	.button-primary {
+		width: 100px;
+		margin-block: 0;
+		margin-inline-start: 30px;
+	}
+	@media (max-width: 768px) {
+		padding: 120px 0 40px 0;
+	}
+}
+
+.contact-form-row {
+	display: flex;
+	margin-block-start: 55px;
+	margin-block: 60px;
+
+	.input-group {
+		width: 230px;
+		@media (max-width: 768px) {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+
+	.input-group + .input-group {
+		margin-inline-start: 30px;
+		@media (max-width: 768px) {
+			margin-inline-start: 0px;
+		}
+	}
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
+}
+
+.form-checkboxes-wrapper {
+	max-width: 800px;
+}

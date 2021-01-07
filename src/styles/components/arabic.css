@@ -1,0 +1,147 @@
+*:lang('ar') {
+	direction: rtl;
+}
+
+[dir='rtl'] {
+	.heading {
+		font-family: 'Cairo', serif;
+	}
+
+	.description {
+		font-family: 'Cairo', serif;
+	}
+
+	.counter,
+	.sub-title,
+	.heading-secondary {
+		font-family: 'Cairo', serif;
+	}
+
+	.arrow-link,
+	.corner-borders {
+		font-family: 'Cairo', serif;
+	}
+
+	.shop-slider-wrapper {
+		padding: 150px 50px 150px 0px;
+	}
+
+	.input-feild-email:before {
+		width: 15px;
+	}
+
+	.input-feild-email:after {
+		width: 290px;
+	}
+
+	.input-feild:before {
+		width: 15px;
+	}
+
+	.input-feild:after {
+		width: 150px;
+	}
+
+	.input-group-mail:after {
+		left: 20px;
+		right: auto;
+		transform: scaleX(-1) translateY(-50%);
+	}
+
+	input::placeholder {
+		font-family: 'Cairo', serif;
+	}
+
+	.community-description-wrapper {
+		right: 0;
+	}
+
+	.arrow-link--yellow:after {
+		transform: scaleX(-1);
+	}
+
+	.arrow-link--white:after {
+		transform: scaleX(-1);
+	}
+
+	.home-slider-title,
+	.counter-description {
+		font-family: 'Cairo', serif;
+	}
+
+	.scroll-down {
+		z-index: 1;
+		left: auto;
+		font-family: 'Cairo', serif;
+		right: 0;
+	}
+
+	.about-master-plan-content img {
+		transform: scaleX(-1);
+	}
+
+	.shop-slider-wrapper .swiper-slide-next img {
+		right: -15%;
+		left: auto;
+	}
+
+	.shop-slider-wrapper .swiper-pagination-fraction {
+		right: 30px;
+		left: auto;
+	}
+	.community-slide-content {
+		text-align: center;
+	}
+	.community-slider .swiper-slide-next .community-slide-content {
+		right: -120px;
+		left: auto;
+	}
+	.community-slider .swiper-slide-prev .community-slide-content {
+		left: -120px;
+		right: auto;
+	}
+	.home-slider__wrapper .swiper-slide-next .home-slider-title-wrapper {
+		right: -200px;
+	}
+
+	.home-happening-slider .swiper-slide-next .events-content-wrapper {
+		right: -350px;
+	}
+
+	.input-group label {
+		font-family: 'Cairo', serif;
+		right: 10px;
+		left: 0;
+	}
+
+	.conact-us-wrapper {
+		background-position: left !important;
+	}
+	@media (max-width: 768px) {
+		.shop-slider-wrapper .swiper-pagination-fraction {
+			right: 75%;
+			left: auto;
+		}
+
+		.input-feild-email:before {
+			width: 10px;
+		}
+
+		.input-feild-email:after {
+			width: 215px;
+		}
+
+		.input-feild:before {
+			width: 10px;
+		}
+
+		.input-feild:after {
+			width: 240px;
+		}
+
+		.input-group-mail:after {
+			left: 20px;
+			right: auto;
+		}
+	}
+}

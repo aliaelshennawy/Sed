@@ -1,0 +1,23 @@
+block config
+include ../mixins/_all
+doctype
+- if (page === 'arabic-home') {
+	html.no-js(dir="rtl" lang="ar")
+- }
+- if (page !== 'arabic-home') {
+	html.no-js(dir="ltr" lang="en")
+- }
+	include _head
+	body
+		//[if lt IE 10]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" upgrade your browser to improve your experience.</p>
+		- if (page !== 'unit-details' && page !== 'contact-us') {
+			include _header
+		- }
+		- if (page === 'unit-details' || page === 'contact-us') {
+			include _header-fixed
+		- }
+		block content
+		- if (page !== 'events' && page !== 'community' ) {
+			include _footer
+		- }
+		include _scripts

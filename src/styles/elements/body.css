@@ -1,0 +1,16 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Century Gothic', serif;
+	color: var(--primary-color);
+	font-size: 14px;
+	scroll-behavior: smooth;
+}
+
+body.menu-opened {
+	overflow: hidden;
+	position: relative;
+}
+body.ar {
+	font-family: 'Cairo', serif;
+}

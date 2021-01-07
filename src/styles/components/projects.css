@@ -1,0 +1,20 @@
+.banner_wrapper {
+	position: relative;
+	top: -80px;
+	width: 100%;
+	.title {
+		position: absolute;
+		top: 30%;
+		font-family: 'NotoSerif', serifgit ;
+		font-weight: bold;
+		color: #fff;
+		font-size: 50px;
+	}
+}
+
+.banner-img {
+	background-size: cover;
+	height: 350px;
+	width: 100%;
+	background-repeat: no-repeat;
+}

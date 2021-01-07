@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "scrollreveal": "./scrollreveal.js",
+    "swiper": "./swiper.js"
+  }
+}
