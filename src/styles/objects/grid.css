@@ -6,6 +6,9 @@
 	&--narrow {
 		max-width: 1000px;
 	}
+	&-super--narrow {
+		max-width: 700px;
+	}
 	@media (max-width: 768px) {
 		padding-inline: 30px;
 	}

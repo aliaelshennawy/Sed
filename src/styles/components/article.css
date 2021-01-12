@@ -1,0 +1,40 @@
+.inner-article-wrapper {
+	text-align: center;
+	margin-bottom: 40px;
+	background-image: url('../../images/background/Group.svg');
+	background-repeat: no-repeat;
+	background-position: 140% 100%;
+	position: relative;
+
+	svg {
+		width: 40px;
+		height: 40px;
+	}
+
+	ul {
+		position: absolute;
+		top: 15%;
+		left: 15%;
+
+		li + li {
+			margin-top: 10px;
+		}
+	}
+
+	h1 {
+		font-family: 'NotoSerif', serif;
+		font-size: 38px;
+	}
+
+	.description {
+		font-family: 'GilSans', serif;
+		color: var(--gray);
+		font-size: 16px;
+		font-weight: 500;
+		text-align: left;
+	}
+
+	img {
+		margin-block: 40px;
+	}
+}

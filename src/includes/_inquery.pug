@@ -1,23 +1,2 @@
 +banner({title: 'Property Inquiry', image: 'images/content/projects.jpg'})
-.inquery-wapper
-	.container.container--narrow
-		form
-			.input-group.input-feild
-				label Name
-				input(type="text" placeholder="Enter your full name")
-			.input-group.input-feild
-				label Phone
-				input(type="text" placeholder="Enter your phone number")
-			.input-group.input-feild
-				label Email
-				input(type="email" placeholder="Enter your email")
-			.input-group.input-select
-				label Pick a project
-				select
-					option(value="none" selected disabled hidden) Select an project
-					option(value="location_2") Location 1
-					option(value="location_2") Location 2
-			.input-group.input-feild
-				label Message
-				textarea(name="message", cols="30", rows="10")
-			button.button-primary(type="submit") Apply
+include _form

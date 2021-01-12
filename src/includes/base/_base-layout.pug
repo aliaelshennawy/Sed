@@ -9,13 +9,8 @@ doctype
 - }
 	include _head
 	body
-		//[if lt IE 10]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" upgrade your browser to improve your experience.</p>
-		- if (page !== 'unit-details' && page !== 'contact-us') {
-			include _header
-		- }
-		- if (page === 'unit-details' || page === 'contact-us') {
-			include _header-fixed
-		- }
+		//[if lt IE 10]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" upgrade your browser to improve your experience.</p>	
+		include _header
 		block content
 		- if (page !== 'events' && page !== 'community' ) {
 			include _footer

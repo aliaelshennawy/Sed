@@ -1,95 +1,20 @@
-.conact-us-wrapper {
-	background-color: #fff;
-	background-position: right !important;
-	.heading {
+.map-wrapper {
+	padding-block: 40px;
+	background-color: var(--light-gray);
+	h1 {
+		font-size: 38px;
+		font-family: 'NotoSerif', serif;
+		text-align: center;
+	}
+}
+.address-item {
+	h2 {
+		font-family: 'GilSans', serif;
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.description {
 		color: var(--gray);
-		margin: 0;
-		padding-block-start: 50px;
+		font-size: 16px;
 	}
-	@media (max-width: 768px) {
-		background-image: none !important;
-		height: auto;
-	}
-}
-
-.contact-map-wrapper {
-	background-color: #fff;
-	padding: 70px 70px 0 0;
-	width: 65%;
-
-	img {
-		display: block;
-		margin: 0 auto;
-	}
-	@media (max-width: 768px) {
-		padding: 0;
-		width: 100%;
-		padding-top: 40px;
-	}
-}
-
-.contact-info-wrapper {
-	padding-block: 120px;
-	@media (max-width: 768px) {
-		li:last-child {
-			margin-top: 93px;
-		}
-	}
-}
-
-.contact-info-wrapper ul {
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	@media (max-width: 768px) {
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
-	}
-}
-
-.contact-info-wrapper li {
-	position: relative;
-}
-
-.contact-info-wrapper li:after {
-	position: absolute;
-	content: '';
-	display: inline-block;
-	width: 180px;
-	height: 180px;
-	left: -30%;
-	top: 50%;
-	transform: translateY(-50%);
-	background-image: url('/images/icons/dark-squares.svg');
-	@media (max-width: 768px) {
-		width: 100px;
-		height: 100px;
-		background-size: contain;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
-	}
-}
-
-.contact-info-wrapper li + li {
-	margin-left: 120px;
-	@media (max-width: 768px) {
-		margin-left: 0;
-		margin-top: 80px;
-	}
-}
-
-.button-primary {
-	margin-block: 40px;
-	background-color: var(--blue);
-	color: #fff;
-	border: none;
-	font-size: 18px;
-	font-family: 'NotoSerif', serif;
-	text-align: center;
-	height: 50px;
-	width: 260px;
-	border-radius: 25px;
-	text-transform: uppercase;
 }

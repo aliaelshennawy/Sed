@@ -37,6 +37,7 @@
 @import 'components/projects.css';
 @import 'components/single-project.css';
 @import 'components/careers.css';
+@import 'components/article.css';
 
 /* Utilities – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class */
 @import 'utilities/floats.css';
