@@ -87,3 +87,34 @@
 .career-item-wrapper + .career-item-wrapper {
 	margin-top: 40px;
 }
+.career-inner {
+	margin-bottom: 40px;
+	background-image: url('../../images/background/Group.svg');
+	background-position: -200px 150%;
+	background-repeat: no-repeat;
+	form {
+		padding: 50px;
+		background-color: #f2f6f8;
+	}
+	label {
+		background-color: #f2f6f8;
+	}
+	textarea {
+		background-color: #f2f6f8;
+	}
+	.input-group + .input-group {
+		margin-top: 40px;
+	}
+}
+.career-inner .career-item-wrapper {
+	background-color: #fff;
+	padding: 0;
+	a {
+		display: none;
+	}
+	.description {
+		width: 100%;
+		max-width: 100%;
+		color: var(--gray);
+	}
+}

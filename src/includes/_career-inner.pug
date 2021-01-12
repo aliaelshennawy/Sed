@@ -1,0 +1,21 @@
++banner({title: 'Join our team', image: 'images/content/projects.jpg'})
+.career-inner
+	.container.container--narrow
+		.cols.cols--2
+			.col
+				+careerItem({title:"Senior Accountant", description:"Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu." , location:"Egypt", department:"Finance", type:"Full Time", link:""})
+			.col
+				form
+					.input-group.input-feild
+						label Name
+						input(type="text" placeholder="Enter your full name")
+					.input-group.input-feild
+						label Phone
+						input(type="text" placeholder="Enter your phone number")
+					.input-group.input-feild
+						label Email
+						input(type="email" placeholder="Enter your email")
+					.input-group.input-feild
+						label Message
+						textarea(name="message", cols="30", rows="10")
+					button.button-primary(type="submit") Apply

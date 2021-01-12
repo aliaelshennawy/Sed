@@ -81,11 +81,15 @@
 }
 
 .button-primary {
-	font-family: 'Century Gothic', serif;
-	width: 200px;
-	height: 54px;
 	margin-block: 40px;
-	color: var(--yellow);
-	background-color: transparent;
-	border: 1px solid var(--yellow);
+	background-color: var(--blue);
+	color: #fff;
+	border: none;
+	font-size: 18px;
+	font-family: 'NotoSerif', serif;
+	text-align: center;
+	height: 50px;
+	width: 260px;
+	border-radius: 25px;
+	text-transform: uppercase;
 }
