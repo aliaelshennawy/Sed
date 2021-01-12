@@ -35,6 +35,8 @@
 @import 'components/contact-us.css';
 @import 'components/arabic.css';
 @import 'components/projects.css';
+@import 'components/single-project.css';
+@import 'components/careers.css';
 
 /* Utilities – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class */
 @import 'utilities/floats.css';

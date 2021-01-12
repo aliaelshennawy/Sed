@@ -1,18 +1,52 @@
 .input-group {
 	position: relative;
-	width: 388px;
-	height: 55px;
-
+	select {
+		border: 1px solid var(--primary-color);
+	}
 	@media (max-width: 768px) {
 		width: 100%;
+	}
+}
+.input-select {
+	position: relative;
+	label {
+		font-size: 18px;
+		background-color: #fff;
+		font-weight: bold;
+	}
+	&::after {
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+		content: '';
+		display: inline-block;
+		width: 20px;
+		vertical-align: middle;
+		height: 12px;
+		background-image: url('../../images/icons/down.svg');
+		background-repeat: no-repeat;
+	}
+	option {
+		padding-inline-start: 20px;
+	}
+	select {
+		width: 100%;
+		appearance: none;
+		color: var(--gray);
+		font-size: 14px;
+		font-family: 'GilSans', serif;
+		font-weight: 100;
+		border: 1px solid var(--primary-color);
+		height: 60px;
+		padding-inline-start: 25px;
 	}
 }
 
 .input-group label {
 	position: absolute;
 	left: 10px;
-	top: -10px;
-	background-color: transparent;
+	top: -15px;
 	padding: 0 15px;
 }
 
@@ -20,8 +54,8 @@
 	height: 55px;
 	background-color: transparent;
 	width: 100%;
-	color: #fff;
-	border: 1px solid #fff;
+	color: var(--primary-color);
+	border: 1px solid var(--primary-color);
 	border-top: 0;
 }
 
@@ -33,7 +67,7 @@
 	left: 0;
 	width: 10px;
 	height: 1px;
-	background-color: #fff;
+	background-color: var(--primary-color);
 }
 
 .input-feild::before {
@@ -44,7 +78,7 @@
 	right: 0;
 	width: 150px;
 	height: 1px;
-	background-color: #fff;
+	background-color: var(--primary-color);
 
 	@media (max-width: 768px) {
 		width: 235px;
@@ -52,7 +86,7 @@
 }
 
 .input-feild-email::before {
-	content: ' ';
+	content: '';
 	display: inline-block;
 	position: absolute;
 	top: 0;

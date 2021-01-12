@@ -80,12 +80,6 @@
 	}
 }
 
-.contact-info-wrapper p,
-a {
-	color: var(--gray);
-	max-width: 235px;
-}
-
 .button-primary {
 	font-family: 'Century Gothic', serif;
 	width: 200px;

@@ -1,0 +1,10 @@
+mixin careerItem({title, description , location, department, type, link})
+	.career-item-wrapper.clearfix
+		.container
+			h1.title=title
+			ul.career-item-list.list.list--inline
+				li.career-location=location
+				li.career-department=department
+				li.career-type=type
+			p.description=description
+			a(href=link) Apply Now

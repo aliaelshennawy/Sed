@@ -8,6 +8,13 @@
 }
 
 @font-face {
+	font-family: 'GilSans';
+	src: url('../fonts/gil-light.woff2') format('woff2'),
+		url('../fonts/gil-light.woff') format('woff'), url('../fonts/gil-light.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 100;
+}
+@font-face {
 	font-family: 'NotoSerif';
 	src: url('../fonts/NotoSerif-Regular.woff2') format('woff2'),
 		url('../fonts/NotoSerif-Regular.woff') format('woff'),

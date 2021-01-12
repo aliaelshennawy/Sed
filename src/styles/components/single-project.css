@@ -1,0 +1,29 @@
+.single-project-wrapper {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	.location {
+		font-family: 'GilSans', serif;
+		position: absolute;
+		top: 40px;
+		left: -40px;
+		padding: 10px 20px;
+		font-size: 18px;
+		color: var(--primary-color);
+		background-color: var(--yellow);
+	}
+	.title {
+		color: var(--primary-color);
+		font-family: 'NotoSerif', serif;
+		font-weight: bold;
+		font-size: 38px;
+		line-height: 52px;
+		text-align: left;
+	}
+	img {
+		min-width: 332px;
+		width: 332px;
+		height: 332px;
+		object-fit: cover;
+	}
+}

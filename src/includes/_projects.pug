@@ -1,1 +1,13 @@
-+banner({title: 'Projects', image: 'images/content/projects.jpg'})
+.projects-wrapper
+	+banner({title: 'Projects', image: 'images/content/projects.jpg'})
+	.container.container--narrow
+		.cols.cols--2
+			.col
+				+singleProject({link:'#', location:'New Cairo', title: 'Sawary Compound', image: 'images/content/project-1.jpg'})
+			.col
+				+singleProject({link:'#', location:'New Cairo', title: 'Sawary Compound', image: 'images/content/project-1.jpg'})
+			.col
+				+singleProject({link:'#', location:'New Cairo', title: 'Sawary Compound', image: 'images/content/project-1.jpg'})
+			.col
+				+singleProject({link:'#', location:'New Cairo', title: 'Sawary Compound', image: 'images/content/project-1.jpg'})
+	+imageLink({link:'#', title: 'Previous Projects', image:'images/content/link-image.jpg'})
