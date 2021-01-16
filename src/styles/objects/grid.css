@@ -6,6 +6,10 @@
 	&--narrow {
 		max-width: 1000px;
 	}
+	&--tabs {
+		width: 85%;
+		margin: 0 auto;
+	}
 	&-super--narrow {
 		max-width: 700px;
 	}
@@ -15,6 +19,9 @@
 }
 .cols {
 	margin-inline: -15px;
+	&-tabs {
+		margin-inline: -10px;
+	}
 	@media (max-width: 768px) {
 		margin-inline: 0px;
 	}

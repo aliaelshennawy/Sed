@@ -1,0 +1,7 @@
+mixin mediaMain({href, title, daysLeft, image, date})
+	.container.container--narrow
+		a.media-main(href=href)
+			img(src=image)
+			span.days-left=daysLeft
+			span.date=date
+			h1.title=title

@@ -1,0 +1,134 @@
+.about-tabs-wrapper {
+	position: relative;
+	height: 100vh;
+	top: 0;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 2%;
+		content: '';
+		display: inline-block;
+		width: 1px;
+		height: 100%;
+		background-color: #d8d8d8;
+	}
+
+	.tabs {
+		width: 5%;
+		display: flex;
+		min-height: 350px;
+		top: 50%;
+		left: 0;
+		transform: translateY(-50%);
+		margin: 0 auto;
+		position: absolute;
+		/* align-items: s; */
+		justify-content: space-between;
+		flex-direction: column;
+
+		.navigation__item {
+			color: var(--gray);
+			font-family: 'GilSans', serif;
+			writing-mode: vertical-rl;
+
+			a {
+				color: inherit;
+			}
+
+			&.active-tab {
+				font-weight: bold;
+				color: var(--primary-color);
+
+				a {
+					color: var(--primary-color);
+				}
+			}
+		}
+	}
+}
+
+.project-map-wrapper {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		height: 630px;
+		object-fit: contain;
+	}
+}
+
+.download {
+	font-family: 'NotoSerif', serif;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+
+.project-floor-plan {
+	.download {
+		display: inline-block;
+	}
+}
+
+.facility-grid {
+	height: 100vh;
+
+	.col {
+		padding-inline: 5px;
+	}
+
+	.grid-tile-wrapper {
+		position: relative;
+		height: 100vh;
+		color: #fff;
+		text-align: center;
+		cursor: pointer;
+		overflow: hidden;
+
+		.grid-tile-details {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 90%;
+			transform: translate(-50%, -50%);
+
+			p {
+				display: none;
+			}
+		}
+
+		&:hover {
+			p {
+				display: block;
+			}
+		}
+
+		&:hover:before {
+			content: '';
+			position: absolute;
+			display: inline-block;
+			width: 200px;
+			height: 200px;
+			bottom: -40px;
+			left: -40px;
+			background-size: contain;
+			background-image: url('../../images/background/hover-circle.svg');
+			background-repeat: no-repeat;
+		}
+
+		h1 {
+			font-family: 'Noto-serif', serif;
+			font-weight: bold;
+			color: #fff;
+		}
+	}
+
+	img {
+		width: 100%;
+		height: 100vh;
+		object-fit: cover;
+	}
+}
