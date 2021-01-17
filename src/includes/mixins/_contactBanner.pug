@@ -1,0 +1,8 @@
+mixin contactBanner({href,linkName , description, title, image})
+	.container.container--tabs
+		.section
+			.contact-banner-wrapper(style=`background-image: url(${image})`)
+				.contact-banner
+					h1.title=title
+					p.description= description
+					a.circle-link(href=href)= linkName

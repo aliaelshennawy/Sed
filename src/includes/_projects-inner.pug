@@ -2,7 +2,19 @@
 .about-tabs-wrapper
 	+tabs(['About', 'Location', 'Masterplan', 'Facilities'])
 		.tab-content(role="tabpanel")
-			h1 About tab1 
+			.container.container--tabs
+				.about-project-wrapper
+					.about-images-wrapper
+						img(src="../../images/content/content-jayed.jpg")
+						img(src="../../images/content/content-jayed-2.jpg")
+					.about-description-wrapper
+						.title About Jayd
+						.description The place that will provide you with a life full of peacefulness and elegance. It is a unique and comfortable residential community that provides you with the ideal lifestyle.
+						a.download(href="") Download Porchure
+						ul.numbers.list
+							li 120 <span>Residential Buildings</span>
+							li 200 <span>Units on Total Area</span>
+							li 350k <span>Square Meter</span>
 		.tab-content(role="tabpanel")
 			.container.container--tabs
 				.project-map-wrapper
@@ -40,3 +52,18 @@
 								h1.title Club House & Spa 
 								p Energize every day at the clubhouse, gym, swimming pool and spa specifically designed with our residents’ core needs in mind. All under one roof, for relaxation, living every moment in luxury and having a one of a kind experience.
 							img(src="../../images/content/facility-4.png")
++contactBanner({href: '#',linkName:'Inquire Now' , description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempo.', title:'Looking for More Info', image:'images/content/contact-banner-image.jpg'})
+.container.container--tabs
+	.swiper-container.main-slider-wrapper
+		ul.swiper-wrapper.list
+			li.swiper-slide
+				.title Sawary Compound
+				img(src="../../images/content/project-slider-1.png")
+			li.swiper-slide
+				.title Nile Pearl
+				img(src="../../images/content/project-slider-2.png")
+			li.swiper-slide
+				.title Sawary Compound
+				img(src="../../images/content/project-slider-1.png")
+		//- .swiper-button-prev
+		//- .swiper-button-next

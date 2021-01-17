@@ -1,0 +1,32 @@
+.main-slider-wrapper {
+	margin-bottom: 120px;
+	margin-top: 60px;
+	position: relative;
+	.swiper-slide-next {
+		cursor: url('../../images/icons/cursor.svg'), auto;
+	}
+	li {
+		position: relative;
+		width: 600px !important;
+	}
+	.title {
+		position: absolute;
+		top: 40px;
+		margin: 0;
+		color: inherit;
+		font-family: 'NotoSerif', serif;
+		font-size: 38px;
+		font-weight: bold;
+	}
+	img {
+		width: 332px;
+		height: 332px;
+		margin-inline-start: 80px;
+	}
+}
+.swiper-button-prev {
+	content: 'Prev';
+}
+.swiper-button-next {
+	content: 'Next';
+}

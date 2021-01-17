@@ -132,3 +132,58 @@
 		object-fit: cover;
 	}
 }
+.about-project-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.about-images-wrapper {
+	margin-block: 40px;
+	position: relative;
+	img:last-child {
+		position: absolute;
+		top: 52%;
+		left: 60%;
+	}
+}
+.about-description-wrapper {
+	margin-block: 40px;
+	padding-inline-start: 100px;
+	.title {
+		font-family: 'NotoSerif', serif;
+		font-size: 38px;
+		font-weight: bold;
+	}
+	.description {
+		font-family: 'GilSans', serif;
+		color: var(--gray);
+		line-height: 24px;
+		max-width: 400px;
+	}
+}
+.numbers li::before {
+	content: '';
+	display: inline-block;
+	border-radius: 50%;
+	margin-inline-end: -40px;
+	margin-top: -10px;
+	width: 58px;
+	height: 59px;
+	background-color: #dbdcdd;
+}
+.numbers {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 50px;
+	font-family: 'NotoSerif', serif;
+	font-weight: bold;
+	li {
+		flex-basis: 50%;
+	}
+	span {
+		display: block;
+		font-family: 'GilSans', serif;
+		font-size: 18px;
+		color: var(--primary-color);
+	}
+}

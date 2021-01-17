@@ -178,51 +178,12 @@ class App {
 	}
 	activateSliders() {
 		Swiper.use([Navigation, Pagination]);
-		if (document.querySelector('.home-slider__wrapper')) {
-			new Swiper('.home-slider__wrapper', {
+		if (document.querySelector('.main-slider-wrapper')) {
+			new Swiper('.main-slider-wrapper', {
 				slidesPerView: '1',
-				touchRatio: 0.2,
 				slideToClickedSlide: true,
-				rtl: true,
 				fadeEffect: {
 					crossFade: true,
-				},
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'fraction',
-				},
-			});
-		}
-		if (window.matchMedia('(max-width: 780px)').matches) {
-			if (document.querySelector('.partners-wrapper')) {
-				new Swiper('.partners-wrapper', {
-					slidesPerView: 'auto',
-					slideToClickedSlide: true,
-					breakpoints: {
-						// when window width is >= 320px
-						780: {
-							slidesPerView: 'auto',
-						},
-					},
-				});
-			}
-		}
-		if (document.querySelector('.shop-slider')) {
-			new Swiper('.shop-slider', {
-				slidesPerView: 'auto',
-				slideToClickedSlide: true,
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'fraction',
-				},
-			});
-		}
-		if (document.querySelector('.ammenties-slider')) {
-			new Swiper('.ammenties-slider', {
-				slidesPerView: '1',
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'fraction',
 				},
 				navigation: {
 					nextEl: '.swiper-button-next',
@@ -239,85 +200,6 @@ class App {
 				loop: 'true',
 				spaceBetween: 20,
 				centeredSlides: true,
-			});
-		}
-		if (document.querySelector('.unit-types-slider')) {
-			new Swiper('.unit-types-slider', {
-				centeredSlides: true,
-				slideToClickedSlide: true,
-				// spaceBetween: 120,
-				slidesPerView: 'auto',
-				roundLengths: true,
-				loop: true,
-			});
-		}
-		if (document.querySelector('.career-banner-slider')) {
-			new Swiper('.career-banner-slider', {
-				slidesPerView: '1',
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'fraction',
-				},
-				navigation: {
-					nextEl: '.swiper-button-next',
-					prevEl: '.swiper-button-prev',
-				},
-			});
-		}
-		if (document.querySelector('.news-slider')) {
-			new Swiper('.news-slider', {
-				slidesPerView: 3,
-				loop: false,
-				centerInsufficientSlides: true,
-				breakpoints: {
-					320: {
-						slidesPerView: 1,
-						spaceBetween: 0,
-					},
-					768: {
-						slidesPerView: 1,
-						spaceBetween: 10,
-					},
-				},
-			});
-		}
-		if (document.querySelector('.unit-slider-wrapper')) {
-			new Swiper('.unit-slider-wrapper', {
-				slidesPerView: 'auto',
-				slideToClickedSlide: true,
-				centeredSlides: true,
-				slidesPerGroup: 1,
-				spaceBetween: 20,
-				loop: true,
-			});
-		}
-		if (document.querySelector('.events-slider')) {
-			new Swiper('.events-slider', {
-				slidesPerView: 'auto',
-				slideToClickedSlide: true,
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'fraction',
-				},
-			});
-		}
-		if (document.querySelector('.community-slider')) {
-			new Swiper('.community-slider', {
-				slidesPerView: 'auto',
-				centeredSlides: true,
-				spaceBetween: 20,
-				slideToClickedSlide: true,
-				loop: true,
-				pagination: {
-					el: '.swiper-pagination',
-					type: 'fraction',
-				},
-				breakpoints: {
-					// when window width is >= 320px
-					760: {
-						slidesPerView: '1',
-					},
-				},
 			});
 		}
 	}
