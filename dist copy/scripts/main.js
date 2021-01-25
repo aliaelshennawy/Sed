@@ -1,6 +1,5 @@
 import Swiper from './web_modules/swiper.js';
-import Lightbox from './web_modules/lightbox2.js';
-import { Navigation, Pagination, Thumbs } from './web_modules/swiper.js';
+import { Navigation, Pagination } from './web_modules/swiper.js';
 import ScrollReveal from './web_modules/scrollreveal.js';
 import $ from './web_modules/jquery.js';
 
@@ -178,7 +177,7 @@ class App {
 		mySwiper.destroy(true, true);
 	}
 	activateSliders() {
-		Swiper.use([Navigation, Pagination, Thumbs]);
+		Swiper.use([Navigation, Pagination]);
 		if (document.querySelector('.main-slider-wrapper')) {
 			new Swiper('.main-slider-wrapper', {
 				slidesPerView: '1',
@@ -195,29 +194,18 @@ class App {
 		if (document.querySelector('.home-slider')) {
 			new Swiper('.home-slider', {
 				slidesPerView: '1',
-				loop: true,
-				loopAdditionalSlides: 2,
 				slideToClickedSlide: true,
 				fadeEffect: {
 					crossFade: true,
 				},
 			});
 		}
-		if (document.querySelector('.gallery-thumbs')) {
-			var galleryThumbs = new Swiper('.gallery-thumbs', {
-				spaceBetween: 10,
-				slideThumbActiveClass: 'active-thumb',
-				slidesPerView: 1,
-				watchSlidesVisibility: true,
-				watchSlidesProgress: true,
-				slideToClickedSlide: true,
-			});
-		}
 		if (document.querySelector('.home-project-slider')) {
-			var galleryTop = new Swiper('.home-project-slider', {
-				spaceBetween: 10,
-				thumbs: {
-					swiper: galleryThumbs,
+			new Swiper('.home-project-slider', {
+				slidesPerView: '1',
+				slideToClickedSlide: true,
+				fadeEffect: {
+					crossFade: true,
 				},
 			});
 		}

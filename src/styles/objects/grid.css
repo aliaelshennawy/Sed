@@ -4,7 +4,7 @@
 	width: 100%;
 	padding-inline: 15px;
 	&--narrow {
-		max-width: 1000px;
+		max-width: 1100px;
 	}
 	&--tabs {
 		width: 85%;
