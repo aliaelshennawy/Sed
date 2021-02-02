@@ -233,6 +233,27 @@ class App {
 				},
 			});
 		}
+		if (document.querySelector('.about-slider')) {
+			new Swiper('.about-slider', {
+				slidesPerView: '1',
+				slideToClickedSlide: true,
+				direction: 'vertical',
+				fadeEffect: {
+					crossFade: true,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+					renderBullet: function (index, className) {
+						return '<span class="' + className + '">' + '1975' + '</span>';
+					},
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			});
+		}
 		if (
 			window.matchMedia('(max-width: 767px)').matches &&
 			document.querySelector('.grid-banner-wrapper-slider')

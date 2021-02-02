@@ -1,7 +1,0 @@
-{
-  "imports": {
-    "jquery": "./jquery.js",
-    "scrollreveal": "./scrollreveal.js",
-    "swiper": "./swiper.js"
-  }
-}

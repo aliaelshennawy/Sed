@@ -146,6 +146,21 @@
 		left: 60%;
 	}
 }
+.main-leader-container {
+	margin-block: 60px;
+	position: relative;
+	.title {
+		position: absolute;
+		top: 20%;
+		left: 30%;
+		max-width: 600px;
+	}
+	.description {
+		position: absolute;
+		top: 50%;
+		left: 45%;
+	}
+}
 .about-description-wrapper {
 	margin-block: 40px;
 	padding-inline-start: 100px;

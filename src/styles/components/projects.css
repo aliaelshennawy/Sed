@@ -74,6 +74,7 @@
 	.title {
 		position: absolute;
 		top: 30%;
+		margin-top: 140px;
 		font-family: 'NotoSerif', serif;
 		font-weight: bold;
 		color: #fff;
