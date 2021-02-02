@@ -2,6 +2,7 @@ import Swiper from './web_modules/swiper.js';
 import { Navigation, Pagination, Thumbs } from './web_modules/swiper.js';
 import ScrollReveal from './web_modules/scrollreveal.js';
 import $ from './web_modules/jquery.js';
+import SimpleLightbox from './web_modules/simplelightbox.js';
 
 class App {
 	constructor() {
@@ -14,11 +15,18 @@ class App {
 		this.languageSwitcher();
 		this.showMap();
 		this.toggleListView();
+		this.galleryItemClick();
 	}
 	bindEvents() {
 		$(document).on('click', '.tabs a', this.handleTabTriggerClick.bind(this));
 		$('ul.tabs').on('keydown', 'a', this.handleKeyboardPress.bind(this));
 		$(window).on('hashchange', this.handleHashChange.bind(this));
+	}
+	galleryItemClick() {
+		if (document.querySelector('.gallery-item')) {
+			console.log('CLICKED');
+			new SimpleLightbox('.gallery-item a');
+		}
 	}
 	initializeTabs() {
 		const $tabs = $('.tabs__container');

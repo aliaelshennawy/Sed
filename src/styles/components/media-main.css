@@ -1,1 +1,43 @@
-  
+.media-main {
+	position: relative;
+	margin-block: 60px;
+	display: block;
+	height: 600px;
+
+	.days-left {
+		font-family: 'GilSans', serif;
+		position: absolute;
+		top: 5%;
+		left: -40px;
+		padding: 10px 20px;
+		font-size: 18px;
+		background-color: var(--yellow);
+	}
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 720px;
+		object-fit: contain;
+		height: 470px;
+	}
+
+	.title {
+		position: absolute;
+		left: 50%;
+		top: 15%;
+		font-size: 50px;
+		font-family: 'NotoSerif', serif;
+		max-width: 514px;
+	}
+
+	.date {
+		position: absolute;
+		left: 70%;
+		font-family: 'GilSans', serif;
+		top: 44%;
+		font-size: 28px;
+		color: var(--gray);
+	}
+}

@@ -2,7 +2,7 @@
   "imports": {
     "jquery": "./jquery.js",
     "scrollreveal": "./scrollreveal.js",
-    "swiper": "./swiper.js",
-    "lighbox": "./lightbox2.js"
+    "simplelightbox": "./simplelightbox.js",
+    "swiper": "./swiper.js"
   }
 }

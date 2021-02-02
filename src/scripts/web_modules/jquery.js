@@ -1,8 +1,4 @@
-var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
-
-function createCommonjsModule(fn, module) {
-	return module = { exports: {} }, fn(module, module.exports), module.exports;
-}
+import { c as createCommonjsModule, a as commonjsGlobal } from './common/_commonjsHelpers-6a48b99e.js';
 
 var jquery = createCommonjsModule(function (module) {
 /*!

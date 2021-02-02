@@ -63,6 +63,7 @@
 		"lightbox2": "^2.11.3",
 		"scrollmagic": "^2.0.7",
 		"scrollreveal": "^4.0.7",
+		"simplelightbox": "^2.7.0",
 		"swiper": "^6.2.0"
 	}
 }
