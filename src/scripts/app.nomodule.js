@@ -19841,11 +19841,21 @@
   		this.languageSwitcher();
   		this.showMap();
   		this.toggleListView();
+  		this.galleryItemClick();
   	}
   	bindEvents() {
   		jquery(document).on('click', '.tabs a', this.handleTabTriggerClick.bind(this));
   		jquery('ul.tabs').on('keydown', 'a', this.handleKeyboardPress.bind(this));
   		jquery(window).on('hashchange', this.handleHashChange.bind(this));
+  	}
+  	galleryItemClick() {
+  		if (document.querySelector('.gallery-item')) {
+  			console.log('CLICKED');
+  			new simpleLightbox_modules$1('.gallery-item a', {
+  				showCaptions: true,
+  				captionAttribute: 'title',
+  			});
+  		}
   	}
   	initializeTabs() {
   		const $tabs = jquery('.tabs__container');

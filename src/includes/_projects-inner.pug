@@ -20,11 +20,20 @@
 				.project-map-wrapper
 					img(src="../../images/content/map.jpg")
 		.tab-content(role="tabpanel")
-			.project-floor-plan
-				.container.container--tabs
-					a.download(href="") Download Floorplan
-					.project-map-wrapper
-						img(src="../../images/content/floorplan.jpg")
+			.sub-tabs-container
+				+tabs(['Villas', 'Appartments'])
+					.tab-content(role="tabpanel")
+						.project-floor-plan
+							.container.container--tabs
+								a.download(href="") Download Floorplan
+								.project-map-wrapper
+									img(src="../../images/content/floorplan.jpg")
+					.tab-content(role="tabpanel")
+						.project-floor-plan
+							.container.container--tabs
+								a.download(href="") Download Floorplan
+								.project-map-wrapper
+									img(src="../../images/content/floorplan.jpg")
 		.tab-content(role="tabpanel")
 			.container.container--tabs
 				.cols.cols--tabs.cols--4.facility-grid

@@ -1,4 +1,7 @@
 .projects-wrapper {
+	.projects-content {
+		margin-block: 60px;
+	}
 	.col {
 		text-align: center;
 	}
@@ -87,4 +90,41 @@
 	height: 350px;
 	width: 100%;
 	background-repeat: no-repeat;
+}
+
+.about-tabs-wrapper .sub-tabs-container {
+	position: relative;
+	.tabs {
+		/* width: 5%; */
+		display: flex;
+		min-height: 350px;
+		top: 5;
+		left: 0;
+		right: 0;
+		transform: translateY(-50%);
+		margin: 0 auto;
+		position: absolute;
+		/* align-items: s; */
+		justify-content: space-between;
+		flex-direction: column;
+
+		.navigation__item {
+			color: var(--gray);
+			font-family: 'GilSans', serif;
+			writing-mode: vertical-rl;
+
+			a {
+				color: inherit;
+			}
+
+			&.active-tab {
+				font-weight: bold;
+				color: var(--primary-color);
+
+				a {
+					color: var(--primary-color);
+				}
+			}
+		}
+	}
 }

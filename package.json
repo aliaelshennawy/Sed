@@ -60,7 +60,9 @@
 	"dependencies": {
 		"i18n-js": "^3.7.1",
 		"jquery": "^3.5.1",
+		"jquery-modal": "^0.9.2",
 		"lightbox2": "^2.11.3",
+		"magnific-popup": "^1.1.0",
 		"scrollmagic": "^2.0.7",
 		"scrollreveal": "^4.0.7",
 		"simplelightbox": "^2.7.0",

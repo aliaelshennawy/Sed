@@ -162,3 +162,10 @@
 		}
 	}
 }
+
+.content {
+	margin-block: 60px;
+	.description {
+		max-width: 60%;
+	}
+}

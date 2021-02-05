@@ -27,7 +27,7 @@
 @import 'swiper/swiper-bundle.css';
 @import 'swiper/components/effect-fade/effect-fade.scss';
 @import 'simplelightbox/dist/simple-lightbox.css';
-
+@import 'jquery-modal/jquery.modal.css';
 /* Components – specific UI components. This is where majority of our work takes place and our UI components are often composed of Objects and Components */
 @import 'components/header.css';
 @import 'components/footer.css';
@@ -47,6 +47,7 @@
 @import 'components/about-page.css';
 @import 'components/about-slider.css';
 @import 'components/media-main.css';
+@import 'components/modal.css';
 
 /* Utilities – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class */
 @import 'utilities/floats.css';

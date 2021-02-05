@@ -1,0 +1,83 @@
+body.open {
+  overflow: hidden;
+}
+.modal-content {
+  display: none;
+}
+.modal-content.open {
+  display: block;
+  position: fixed;
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 3;
+  overflow: hidden;
+}
+.modal-content-wrapper {
+  display: flex;
+}
+.modal-content-container {
+  background: #fff;
+  height: 500px;
+  position: relative;
+  width: 85%;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  padding: 80px 80px;
+  z-index: 4;
+  .description {
+    margin: 0;
+    max-width: 80%;
+  }
+  .content {
+    margin: 0;
+  }
+  .images-wrapper {
+    flex-grow: 1;
+    min-width: 35%;
+    position: relative;
+    img:nth-child(1) {
+      width: 380px;
+      height: 330px;
+      object-fit: cover;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    img:nth-child(2) {
+      width: 135px;
+      height: 170px;
+      object-fit: cover;
+      border: 10px solid #fff;
+      position: absolute;
+      left: calc(380px - 145px);
+      transform: translateY(-50%);
+      top: 84%;
+    }
+  }
+  .title {
+    color: var(--blue);
+    margin: 0;
+  }
+  .sub-title {
+    font-family: "GilSans", serif;
+    color: var(--blue);
+    font-size: 18px;
+  }
+  .close {
+    background-image: url('../images/icons/cancel-gray.svg');
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    font-size: 0;
+    position: absolute;
+    color: gray;
+    top: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    right: 40px;
+    cursor: pointer;
+  }
+}

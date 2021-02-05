@@ -110,7 +110,7 @@
 			height: 320px;
 			z-index: 4;
 			background-size: contain;
-			background-image: url('../../images/background/home-slider-circle.svg');
+			background-image: url('../images/background/home-slider-circle.svg');
 			background-repeat: no-repeat;
 		}
 	}
@@ -128,19 +128,6 @@
 			transition: clip-path 1s;
 			clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
 		}
-
-		.title {
-			text-transform: uppercase;
-			line-height: 58px;
-			position: absolute;
-			top: 30%;
-			z-index: 1;
-			max-width: 600px;
-			font-family: 'NotoSerif', serif;
-			color: #fff;
-			font-size: 50px;
-			animation: animateTitle 0.5s ease-in;
-		}
 	}
 }
 
@@ -150,7 +137,6 @@
 	.swiper-slide {
 		background-repeat: no-repeat;
 		background-position: 95% 80%;
-		background-image: url('../../images/background/home-slider-circles.svg');
 	}
 
 	.view-all {
@@ -299,6 +285,18 @@
 .home-projects {
 	width: 100%;
 	position: relative;
+	.title {
+		position: absolute;
+		font-family: 'NotoSerif', serif;
+		left: 30%;
+		top: 25%;
+		color: var(--blue);
+		text-transform: uppercase;
+		font-size: 50px;
+		z-index: 1;
+		max-width: 600px;
+		line-height: 56px;
+	}
 }
 
 @keyframes animateTitle {

@@ -199,12 +199,16 @@ textarea {
 	width: 100%;
 	resize: none;
 }
+.gfield_required {
+	display: none;
+}
 .inquery-wapper {
-	background-image: url('../../images/background/Cirlces-Projects.svg'),
-		url('../../images/background/Group.svg');
+	background-image: url('../images/background/Cirlces-Projects.svg'),
+		url('../images/background/Group.svg');
 	background-repeat: no-repeat, no-repeat;
 	background-position: top right;
 	background-size: 100px;
+
 	form {
 		width: 680px;
 		margin: 0 auto;
@@ -225,5 +229,20 @@ textarea {
 	}
 	.input-group + .input-group {
 		margin-top: 40px;
+	}
+}
+.form {
+	.gform_button {
+		margin-block: 40px;
+		background-color: var(--blue);
+		color: #fff;
+		border: none;
+		font-size: 18px;
+		font-family: 'NotoSerif', serif;
+		text-align: center;
+		height: 50px;
+		width: 260px;
+		border-radius: 25px;
+		text-transform: uppercase;
 	}
 }

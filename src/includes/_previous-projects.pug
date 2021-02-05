@@ -1,28 +1,41 @@
 .projects-wrapper
 	+banner({title: 'Previous Projects', image: 'images/content/projects.jpg'})
-	.container.container--narrow
-		.cols.cols--2
-			.col
-				.input-group.input-select
-					label Location
-					select
-						option(value="none" selected disabled hidden) Select an Option
-						option(value="location_2") Location 1
-						option(value="location_2") Location 2
-			.col
-				.input-group.input-select
-					label Property
-					select
-						option(value="none" selected disabled hidden) Pick a property type
-						option(value="location_2") Location 1
-						option(value="location_2") Location 2
-	.container.container--narrow
-		.cols.cols--2
-			.col
-				+singleProject({link:'#', location:'New Cairo', title: 'Sawary Compound', image: 'images/content/project-1.jpg'})
-			.col
-				+singleProject({link:'#', location:'New Cairo', title: 'Sawary Compound', image: 'images/content/project-1.jpg'})
-			.col
-				+singleProject({link:'#', location:'New Cairo', title: 'Sawary Compound', image: 'images/content/project-1.jpg'})
-			.col
-				+singleProject({link:'#', location:'New Cairo', title: 'Sawary Compound', image: 'images/content/project-1.jpg'})
+	.content
+		.container.container--narrow
+			.cols.cols--2
+				.col
+					.input-group.input-select
+						label Location
+						select
+							option(value="none" selected disabled hidden) Select an Option
+							option(value="location_2") Location 1
+							option(value="location_2") Location 2
+				.col
+					.input-group.input-select
+						label Property
+						select
+							option(value="none" selected disabled hidden) Pick a property type
+							option(value="location_2") Location 1
+							option(value="location_2") Location 2
+		.container.container--narrow
+			.cols.cols--2
+				.col
+					.modal-trigger
+						+singleProject({link:'#', location:'New Cairo', title: 'Sawary Compound', image: 'images/content/project-1.jpg'})
+				.col
+					+singleProject({link:'#', location:'New Cairo', title: 'Sawary Compound', image: 'images/content/project-1.jpg'})
+				.col
+					+singleProject({link:'#', location:'New Cairo', title: 'Sawary Compound', image: 'images/content/project-1.jpg'})
+				.col
+					+singleProject({link:'#', location:'New Cairo', title: 'Sawary Compound', image: 'images/content/project-1.jpg'})
+.modal-content
+	.modal-content-container.clearfix
+		.close &#10006;
+		.modal-content-wrapper
+			.content
+				h1.title Zahret Al Maadi
+				h2.sub-title Al Maadi - Residential - 2009
+				p.description Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id commodo mi consectetur. Curabitur at vestibulum nisi. Nullam vehicula nisi velit. Mauris turpis nisl, molestie ut ipsum et, suscipit vehicula odio. Vestibulum interdum vestibulum felis ac molestie.Praesent aliquet quam et libero dictum, vitae dignissim leo eleifend. In in turpis turpis. Quisque justo turpis, vestibulum non enim nec, tempor mollis mi. Sed vel tristique quam.Nam porttitor blandit accumsan. Ut vel dictum sem, a pretium dui. In malesuada enim in dolor euismod, id co.
+			.images-wrapper
+				img(src="../../images/content/image-modal.jpg")
+				img(src="../../images/content/image-modal.jpg")

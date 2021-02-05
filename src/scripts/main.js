@@ -16,6 +16,7 @@ class App {
 		this.showMap();
 		this.toggleListView();
 		this.galleryItemClick();
+		this.modalOpen();
 	}
 	bindEvents() {
 		$(document).on('click', '.tabs a', this.handleTabTriggerClick.bind(this));
@@ -24,9 +25,25 @@ class App {
 	}
 	galleryItemClick() {
 		if (document.querySelector('.gallery-item')) {
-			console.log('CLICKED');
-			new SimpleLightbox('.gallery-item a');
+			new SimpleLightbox('.gallery-item a', {
+				close: true,
+			});
 		}
+	}
+	modalOpen() {
+		const modalContent = document.querySelector('.modal-content');
+		const body = document.querySelector('body');
+		if (document.querySelector('.modal-trigger')) {
+			const modal = document.querySelector('.modal-trigger');
+			modal.addEventListener('click', () => {
+				modalContent.classList.add('open');
+				body.classList.add('open');
+			});
+		}
+		const close = document.querySelector('.close');
+		close.addEventListener('click', () => {
+			modalContent.classList.remove('open');
+		});
 	}
 	initializeTabs() {
 		const $tabs = $('.tabs__container');
@@ -242,6 +259,8 @@ class App {
 			});
 		}
 		if (document.querySelector('.about-slider')) {
+			var items = document.querySelectorAll('.timeline-item');
+			console.log(items);
 			new Swiper('.about-slider', {
 				slidesPerView: '1',
 				slideToClickedSlide: true,
@@ -253,7 +272,9 @@ class App {
 					el: '.swiper-pagination',
 					clickable: true,
 					renderBullet: function (index, className) {
-						return '<span class="' + className + '">' + '1975' + '</span>';
+						items.each(function (item) {
+							return '<p class="' + className + '">' + item + '</p>';
+						});
 					},
 				},
 				navigation: {
@@ -326,7 +347,7 @@ class App {
 		}
 	}
 	scrollAnimation() {
-		ScrollReveal().reveal('.animate', { delay: 200 });
+		ScrollReveal().reveal('.animate', { delay: 50 });
 	}
 	isArabic(text) {
 		const arabic = /[\u0600-\u06FF]/;

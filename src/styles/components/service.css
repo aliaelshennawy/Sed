@@ -60,6 +60,6 @@
 		width: 172px;
 		z-index: -1;
 		height: 170px;
-		background-image: url('../../images/background/counter-circles.svg');
+		background-image: url('../images/background/counter-circles.svg');
 	}
 }
