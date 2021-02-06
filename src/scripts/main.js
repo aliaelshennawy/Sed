@@ -42,6 +42,7 @@ class App {
 		}
 		const close = document.querySelector('.close');
 		close.addEventListener('click', () => {
+			body.classList.remove('open');
 			modalContent.classList.remove('open');
 		});
 	}
@@ -318,14 +319,17 @@ class App {
 		}
 	}
 	activateMenu() {
-		const menu = document.querySelector('.header-menu');
-		const nav = document.querySelector('.header-nav');
+		const icon = document.querySelector('.header-menu.mobile span');
+		const menu = document.querySelector('.header-menu.mobile');
+		const nav = document.querySelector('.header-nav.mobile');
 		if (!menu) {
 			return;
 		}
-		menu.addEventListener('click', () => {
+		icon.addEventListener('click', () => {
 			document.body.classList.toggle('menu-opened');
 			nav.classList.toggle('hidden');
+			menu.classList.toggle('mobile');
+			// nav.classList.toggle('open');
 		});
 	}
 	showMap() {

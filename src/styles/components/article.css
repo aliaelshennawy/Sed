@@ -5,9 +5,6 @@
 	background-repeat: no-repeat;
 	background-position: 140% 100%;
 	position: relative;
-	.description {
-		width: 100%;
-	}
 	svg {
 		width: 40px;
 		height: 40px;
@@ -29,6 +26,7 @@
 	}
 
 	.description {
+		width: 100%;
 		font-family: 'GilSans', serif;
 		color: var(--gray);
 		font-size: 16px;
