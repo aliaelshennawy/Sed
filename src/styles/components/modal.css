@@ -5,8 +5,7 @@ body.open {
 .modal-content {
 	display: none;
 }
-
-.modal-content.open {
+[id^=modal-].current-modal {
 	display: block;
 	position: fixed;
 	background-color: rgba(0, 0, 0, 0.7);
@@ -15,6 +14,9 @@ body.open {
 	top: 0;
 	z-index: 3;
 	overflow: hidden;
+}
+.modal-content.open {
+	
 }
 
 .modal-content-wrapper {

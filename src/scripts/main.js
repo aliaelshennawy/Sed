@@ -34,10 +34,19 @@ class App {
 		const modalContent = document.querySelector('.modal-content');
 		const body = document.querySelector('body');
 		if (document.querySelector('.modal-trigger')) {
-			const modal = document.querySelector('.modal-trigger');
-			modal.addEventListener('click', () => {
-				modalContent.classList.add('open');
-				body.classList.add('open');
+			const modal_list = document.querySelectorAll('.modal-trigger');
+			var all_modals = [...modal_list]; // converts NodeList to Array
+			all_modals.forEach((modal) => {
+				modal.addEventListener('click', (event) => {
+					const modalRefrence = event.currentTarget.id;
+					console.log('ID', document.querySelectorAll(`#${modalRefrence}`)[1]);
+					document.querySelectorAll(`#${modalRefrence}`)[1].classList.toggle('current-modal');
+					body.classList.add('open');
+					document.querySelectorAll(`#${modalRefrence}`)[1].addEventListener('click', () => {
+						document.querySelectorAll(`#${modalRefrence}`)[1].classList.remove('current-modal');
+						body.classList.remove('open');
+					});
+				});
 			});
 		}
 		const close = document.querySelector('.close');
