@@ -34,6 +34,7 @@
 		padding-inline-start: 20px;
 	}
 	select {
+		background-color: #fff;
 		width: 100%;
 		appearance: none;
 		color: var(--gray);

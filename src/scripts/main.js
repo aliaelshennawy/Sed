@@ -322,11 +322,12 @@ class App {
 		const icon = document.querySelector('.header-menu.mobile span');
 		const menu = document.querySelector('.header-menu.mobile');
 		const nav = document.querySelector('.header-nav.mobile');
+		const body = document.querySelector('body');
 		if (!menu) {
 			return;
 		}
 		icon.addEventListener('click', () => {
-			document.body.classList.toggle('menu-opened');
+			body.classList.toggle('menu-opened');
 			nav.classList.toggle('hidden');
 			menu.classList.toggle('mobile');
 			// nav.classList.toggle('open');

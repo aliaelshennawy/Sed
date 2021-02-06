@@ -5,7 +5,7 @@ header
 				a(href="index.html")
 					span.visually-hidden SED
 					img(src="images/SED.svg" alt="SED")
-		.header-menu
+		.header-menu.desktop
 			nav.header-nav
 				ul.list.list--inline
 					li: a(href="/about.html") About SED
@@ -14,6 +14,10 @@ header
 					li: a(href="/careers.html") Careers
 					li: a(href="/contact-us.html") Contact us
 					li: a(href="#form") Property Inquiry
+			.header-contact-wrapper
+				.header-lang
+					.language-switch-ar عربي
+					.language-switch-en.hidden English
 		.header-menu.mobile
 			span
 			nav.header-nav.mobile
@@ -24,7 +28,3 @@ header
 					li: a(href="/careers.html") Careers
 					li: a(href="/contact-us.html") Contact us
 					li: a(href="#form") Property Inquiry
-		.header-contact-wrapper
-			.header-lang
-				.language-switch-ar عربي
-				.language-switch-en.hidden English

@@ -8,8 +8,9 @@ body {
 }
 
 body.menu-opened {
-	overflow: hidden;
-	position: relative;
+	@media (max-width: 767px) {
+		overflow: hidden;
+	}
 }
 body.ar {
 	font-family: 'Cairo', serif;
