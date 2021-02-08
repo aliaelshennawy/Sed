@@ -33,9 +33,10 @@ class App {
 	modalOpen() {
 		const modalContent = document.querySelector('.modal-content');
 		const body = document.querySelector('body');
-		if (document.querySelector('.modal-trigger')) {
-			const modal_list = document.querySelectorAll('.modal-trigger');
-			var all_modals = [...modal_list]; // converts NodeList to Array
+		const modal_list = document.querySelectorAll('.modal-trigger');
+		var all_modals = [...modal_list];
+		if (document.querySelector('.modal-trigger') && all_modals) {
+			// converts NodeList to Array
 			all_modals.forEach((modal) => {
 				modal.addEventListener('click', (event) => {
 					const modalRefrence = event.currentTarget.id;
@@ -50,10 +51,12 @@ class App {
 			});
 		}
 		const close = document.querySelector('.close');
-		close.addEventListener('click', () => {
-			body.classList.remove('open');
-			modalContent.classList.remove('open');
-		});
+		if (close) {
+			close.addEventListener('click', () => {
+				body.classList.remove('open');
+				modalContent.classList.remove('open');
+			});
+		}
 	}
 	initializeTabs() {
 		const $tabs = $('.tabs__container');
@@ -361,7 +364,10 @@ class App {
 		}
 	}
 	scrollAnimation() {
-		ScrollReveal().reveal('.animate', { delay: 50 });
+		ScrollReveal().reveal('.animate', { delay: 300 });
+		ScrollReveal().reveal('.animate li:nth-child(1)', { delay: 100 });
+		ScrollReveal().reveal('.animate li:nth-child(2)', { delay: 200 });
+		ScrollReveal().reveal('.animate li:nth-child(3)', { delay: 300 });
 	}
 	isArabic(text) {
 		const arabic = /[\u0600-\u06FF]/;

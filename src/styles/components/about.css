@@ -20,6 +20,7 @@
 		min-height: 350px;
 		top: 50%;
 		left: 0;
+		z-index: 3;
 		transform: translateY(-50%);
 		margin: 0 auto;
 		position: absolute;
@@ -69,6 +70,23 @@
 
 .project-floor-plan {
 	.download {
+		position: absolute;
+		top: 60px;
+		font-weight: bold;
+		display: inline-block;
+	}
+	.download:before {
+		content: '';
+		width: 26px;
+		height: 26px;
+		vertical-align: middle;
+		margin-inline-end: 10px;
+		text-align: center;
+		background-repeat: no-repeat;
+		border: 1px solid var(--blue);
+		border-radius: 50%;
+		background-position: center;
+		background-image: url('../images/icons/download-arrow.svg');
 		display: inline-block;
 	}
 }
@@ -115,7 +133,7 @@
 			bottom: -40px;
 			left: -40px;
 			background-size: contain;
-			background-image: url('../../images/background/hover-circle.svg');
+			background-image: url('../images/background/hover-circle.svg');
 			background-repeat: no-repeat;
 		}
 
@@ -140,10 +158,18 @@
 .about-images-wrapper {
 	margin-block: 40px;
 	position: relative;
+	img:nth-child(1) {
+		width: 600px;
+		object-fit: cover;
+		height: 560px;
+	}
 	img:last-child {
 		position: absolute;
 		top: 52%;
 		left: 60%;
+		width: 260px;
+		height: 300px;
+		object-fit: cover;
 	}
 }
 .main-leader-container {

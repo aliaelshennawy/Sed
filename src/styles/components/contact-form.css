@@ -1,6 +1,6 @@
 .contact-form-wrapper {
 	padding: 80px 0;
-	background-image: url('/images/content/contact-us-banner.jpg');
+	background-image: url('../images/content/contact-us-banner.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	.button-primary {

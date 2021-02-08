@@ -27,7 +27,7 @@
 		width: 20px;
 		vertical-align: middle;
 		height: 12px;
-		background-image: url('../../images/icons/down.svg');
+		background-image: url('../images/icons/down.svg');
 		background-repeat: no-repeat;
 	}
 	option {
@@ -96,7 +96,7 @@
 	right: 20px;
 	top: 50%;
 	transform: translateY(-50%);
-	background-image: url('/images/icons/send.svg');
+	background-image: url('../images/icons/send.svg');
 }
 
 .input-group input::placeholder {
@@ -155,7 +155,7 @@
 		-ms-transform: scale(0);
 		-o-transform: scale(0);
 		transform: scale(0);
-		background-image: url('/images/icons/mark.svg');
+		background-image: url('../images/icons/mark.svg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-color: var(--yellow);
@@ -245,5 +245,11 @@ textarea {
 		width: 260px;
 		border-radius: 25px;
 		text-transform: uppercase;
+	}
+}
+
+@media (max-width: 768px) {
+	.inquery-wapper form {
+		width: 100%;
 	}
 }

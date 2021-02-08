@@ -4,7 +4,7 @@ mixin tabs(tabs)
       ul.tabs.list.list--inline.navigation__list(role="tablist")
         each tab, index in tabs
           li.navigation__item(class=index === 0 ? 'active' : '', role="presentation")
-            a.tab-title(href="#")
+            a.tab-title(href=`#${tab}`)
               = tab
     .tabs__container-content
       block
