@@ -12,7 +12,10 @@
 		padding: 120px 0 40px 0;
 	}
 }
-
+.careers-filter-wrapper {
+	margin-top: 70px;
+	margin-bottom: 40px;
+}
 .contact-form-row {
 	display: flex;
 	margin-block-start: 55px;
@@ -30,6 +33,7 @@
 		margin-inline-start: 30px;
 		@media (max-width: 768px) {
 			margin-inline-start: 0px;
+			margin-top: 20px;
 		}
 	}
 	@media (max-width: 768px) {
@@ -39,4 +43,12 @@
 
 .form-checkboxes-wrapper {
 	max-width: 800px;
+}
+@media (max-width: 768px) {
+	.careers-filter-wrapper {
+		margin-block: 40px;
+		.col + .col {
+			margin-block: 40px;
+		}
+	}
 }

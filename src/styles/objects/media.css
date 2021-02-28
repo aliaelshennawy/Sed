@@ -14,3 +14,18 @@
 		margin-top: 80px;
 	}
 }
+.media-wrapper {
+	.col {
+		text-align: center;
+	}
+}
+.gallery-wrapper {
+	margin-top: 80px;
+	padding-block: 80px;
+	background-color: #F7F7F7;
+	.title {
+		margin-top: 0;
+		text-align: center;
+		margin-bottom: 80px;
+	}
+} 

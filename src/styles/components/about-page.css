@@ -10,10 +10,18 @@
 	background: url('../../images/background/about-full-circle.svg');
 	background-repeat: no-repeat;
 	background-position: 50% 90%;
+	@media (max-width: 768px) {
+		margin-bottom: 60px;
+	}
 }
 
 .strategy-content-wrapper {
 	padding: 40px 60px;
+	@media (max-width: 768px) {
+		max-width: 90%;
+		margin: 0 auto;
+		padding: 40px 20px;
+	}
 }
 
 .strategy-images-wrapper {
@@ -26,6 +34,11 @@
 		border: 10px solid #fff;
 		bottom: -80px;
 		width: 270px;
+		@media (max-width: 768px) {
+			left: 10%;
+			width: 50%;
+			margin-block: 40px;
+		}
 	}
 }
 
@@ -50,6 +63,17 @@
 		bottom: 0;
 		left: 0;
 	}
+	@media (max-width: 768px) {
+		position: static;
+		img {
+			height: 400px;
+			margin-block: 40px;
+			object-fit: cover;
+		}
+		.guide-banner-content {
+			position: static;
+		}
+	}
 }
 .shifted-content {
 	margin-top: 60px;
@@ -66,11 +90,19 @@
 
 	ul {
 		float: left;
+		@media (max-width: 768px) {
+			float: none;
+			margin-block: 40px;
+		}
 	}
 	img {
 		width: 600px;
 		float: right;
 		margin-top: -15%;
+		@media (max-width: 768px) {
+			float: none;
+			margin-top: 0;
+		}
 	}
 }
 .values-list {
@@ -147,6 +179,9 @@
 		display: inline-block;
 		transform: rotate(-10deg);
 		background-image: url('../images/background/about-values-circle.svg');
+	}
+	@media (max-width: 768px) {
+		flex-direction: column;
 	}
 }
 

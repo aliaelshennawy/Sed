@@ -1,8 +1,10 @@
-import Swiper from './web_modules/swiper.js';
+import Swiper, { Autoplay } from './web_modules/swiper.js';
 import { Navigation, Pagination, Thumbs } from './web_modules/swiper.js';
 import ScrollReveal from './web_modules/scrollreveal.js';
 import $ from './web_modules/jquery.js';
 import SimpleLightbox from './web_modules/simplelightbox.js';
+Swiper.use([Autoplay]);
+Swiper.use([Navigation, Pagination]);
 
 class App {
 	constructor() {
@@ -255,6 +257,10 @@ class App {
 			new Swiper('.home-project-slider', {
 				slidesPerView: '1',
 				slideToClickedSlide: true,
+				loop: true,
+				autoplay: {
+					delay: 5000,
+				},
 				fadeEffect: {
 					crossFade: true,
 				},
@@ -273,7 +279,7 @@ class App {
 		}
 		if (document.querySelector('.about-slider')) {
 			var items = document.querySelectorAll('.timeline-item');
-			console.log(items);
+			console.log('ITEMS', items);
 			new Swiper('.about-slider', {
 				slidesPerView: '1',
 				slideToClickedSlide: true,
@@ -282,12 +288,14 @@ class App {
 					crossFade: true,
 				},
 				pagination: {
-					el: '.swiper-pagination',
+					el: '.swiper-pagination-costum',
 					clickable: true,
+					bulletClass: 'bullet',
+					bulletActiveClass: 'active',
 					renderBullet: function (index, className) {
-						items.each(function (item) {
-							return '<p class="' + className + '">' + item + '</p>';
-						});
+						return (
+							'<span class="' + className + '">' + items[index].childNodes[0].nodeValue + '</span>'
+						);
 					},
 				},
 				navigation: {
@@ -331,7 +339,8 @@ class App {
 		}
 	}
 	activateMenu() {
-		const icon = document.querySelector('.header-menu.mobile span');
+		const icon = document.querySelector('.header-menu.mobile .open');
+		const closeMenu = document.querySelector('.header-menu.mobile .close-menu');
 		const menu = document.querySelector('.header-menu.mobile');
 		const nav = document.querySelector('.header-nav.mobile');
 		const body = document.querySelector('body');
@@ -339,9 +348,14 @@ class App {
 			return;
 		}
 		icon.addEventListener('click', () => {
-			body.classList.toggle('menu-opened');
-			nav.classList.toggle('hidden');
-			menu.classList.toggle('mobile');
+			body.classList.add('menu-opened');
+			menu.classList.add('mobile');
+			// nav.classList.toggle('open');
+		});
+		closeMenu.addEventListener('click', () => {
+			console.log('CLOSE, clicked');
+			body.classList.remove('menu-opened');
+			menu.classList.remove('mobile');
 			// nav.classList.toggle('open');
 		});
 	}

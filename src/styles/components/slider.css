@@ -93,3 +93,35 @@
 		margin-inline-start: 80px;
 	}
 }
+@media (max-width: 768px) {
+	.main-slider-wrapper {
+		padding-bottom: 180px;
+		.title {
+			font-size: 24px;
+		}
+		li {
+			width: 90% !important;
+		}
+		img {
+			margin-left: 40px;
+			width: 70%;
+			height: auto;
+			object-fit: contain;
+		}
+		.swiper-button-prev {
+			top: 75%;
+			left: 0;
+		}
+		.swiper-button-next {
+			top: 75%;
+			left: 80%;
+		}
+		.view-all {
+			left: 50%;
+			right: auto;
+			width: 100%;
+			text-align: center;
+			transform: translateX(-50%);
+		}
+	}
+}

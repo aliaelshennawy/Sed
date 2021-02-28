@@ -9,6 +9,9 @@
 	&--tabs {
 		width: 85%;
 		margin: 0 auto;
+		@media (max-width: 768px) {
+			width: 100%;
+		}
 	}
 	&-super--narrow {
 		max-width: 700px;
