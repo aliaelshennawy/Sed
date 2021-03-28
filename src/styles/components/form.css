@@ -203,6 +203,15 @@ textarea {
 .gfield_required {
 	display: none;
 }
+.projects-wrapper {
+	.input-select {
+		width: 50%;
+		margin: 40px auto;
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+	}
+}
 .inquery-wapper {
 	background-image: url('../images/background/Cirlces-Projects.svg'),
 		url('../images/background/Group.svg');
@@ -266,8 +275,27 @@ textarea {
 		border-radius: 25px;
 		text-transform: uppercase;
 	}
+	.ginput_container_select {
+		width: 100% !important;
+	}
 	.ginput_container_select select {
-		width: 100%;
+		width: 100% !important;
+	}
+	.gform_wrapper ul.gform_fields li.gfield {
+		padding-right: 0;
+	}
+	.gform_footer input[type='submit'] {
+		margin-block: 40px;
+		background-color: var(--blue);
+		color: #fff;
+		border: none;
+		font-size: 18px;
+		font-family: 'NotoSerif', serif;
+		text-align: center;
+		height: 50px !important;
+		width: 260px !important;
+		border-radius: 25px;
+		text-transform: uppercase;
 	}
 }
 

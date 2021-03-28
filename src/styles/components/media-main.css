@@ -12,6 +12,9 @@
 		padding: 10px 20px;
 		font-size: 18px;
 		background-color: var(--yellow);
+		@media (max-width: 768px) {
+			left: -20px;
+		}
 	}
 
 	img {
@@ -19,8 +22,13 @@
 		top: 0;
 		left: 0;
 		width: 720px;
-		object-fit: contain;
+		object-fit: cover;
 		height: 470px;
+		@media (max-width: 768px) {
+			height: 270px;
+			width: 100%;
+			position: static;
+		}
 	}
 
 	.title {
@@ -30,6 +38,9 @@
 		font-size: 50px;
 		font-family: 'NotoSerif', serif;
 		max-width: 514px;
+		@media (max-width: 768px) {
+			position: static;
+		}
 	}
 
 	.date {
@@ -39,5 +50,10 @@
 		top: 44%;
 		font-size: 28px;
 		color: var(--gray);
+		@media (max-width: 768px) {
+			position: static;
+			margin-top: 20px;
+			display: inline-block;
+		}
 	}
 }

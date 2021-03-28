@@ -33,10 +33,11 @@
 		left: 20%;
 		border: 10px solid #fff;
 		bottom: -80px;
+		height: 312px;
+		object-fit: cover;
 		width: 270px;
 		@media (max-width: 768px) {
 			left: 10%;
-			width: 50%;
 			margin-block: 40px;
 		}
 	}
@@ -87,9 +88,9 @@
 .avantages-wrapper {
 	background-color: var(--light-gray);
 	padding: 40px 0;
-
 	ul {
 		float: left;
+		margin-top: 40px;
 		@media (max-width: 768px) {
 			float: none;
 			margin-block: 40px;
@@ -97,6 +98,8 @@
 	}
 	img {
 		width: 600px;
+		height: 410px;
+		object-fit: cover;
 		float: right;
 		margin-top: -15%;
 		@media (max-width: 768px) {
@@ -166,6 +169,9 @@
 		display: inline-block;
 		transform: scaleX(-1);
 		background-image: url('../images/background/about-values-circle.svg');
+		@media (max-width: 768px) {
+			left: 0;
+		}
 	}
 
 	li:nth-child(4)::before {
@@ -179,6 +185,9 @@
 		display: inline-block;
 		transform: rotate(-10deg);
 		background-image: url('../images/background/about-values-circle.svg');
+		@media (max-width: 768px) {
+			left: 0;
+		}
 	}
 	@media (max-width: 768px) {
 		flex-direction: column;

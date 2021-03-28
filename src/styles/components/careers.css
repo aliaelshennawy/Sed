@@ -12,7 +12,9 @@
 .career-item-wrapper {
 	background-color: #f2f6f8;
 	padding: 40px;
-
+	@media (max-width: 768px) {
+		padding: 20px;
+	}
 	.title {
 		font-family: 'NotoSerif', serif;
 		font-size: 38px;
@@ -43,6 +45,9 @@
 
 	li + li {
 		margin-inline-start: 20px;
+		@media (max-width: 768px) {
+			margin-inline-start: 5px;
+		}
 	}
 
 	.career-location::before {
@@ -81,6 +86,10 @@
 	.description {
 		width: 75%;
 		max-width: 75%;
+		@media (max-width: 768px) {
+			width: 100%;
+			max-width: 100%;
+		}
 	}
 }
 

@@ -6,11 +6,15 @@
 		font-family: 'GilSans', serif;
 		position: absolute;
 		top: 40px;
+		min-width: 120px;
 		left: -40px;
 		padding: 10px 20px;
 		font-size: 18px;
 		color: var(--primary-color);
 		background-color: var(--yellow);
+		@media (max-width: 768px) {
+			left: -20px;
+		}
 	}
 	.title {
 		color: var(--primary-color);
@@ -18,6 +22,7 @@
 		font-weight: bold;
 		font-size: 38px;
 		line-height: 52px;
+		width: 332px;
 		text-align: left;
 	}
 	img {

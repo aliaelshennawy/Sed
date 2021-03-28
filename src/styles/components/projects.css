@@ -94,6 +94,11 @@
 
 .about-tabs-wrapper .sub-tabs-container {
 	position: relative;
+	@media (max-width: 768px) {
+		.tab-content {
+			padding-top: 0;
+		}
+	}
 	.tabs {
 		/* width: 5%; */
 		display: flex;
@@ -108,7 +113,9 @@
 		/* align-items: s; */
 		justify-content: space-between;
 		flex-direction: row;
-
+		@media (max-width: 768px) {
+			top: 5%;
+		}
 		.navigation__item {
 			color: var(--gray);
 			font-family: 'GilSans', serif;

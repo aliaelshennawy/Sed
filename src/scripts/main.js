@@ -191,26 +191,30 @@ class App {
 		const switchToEn = document.querySelector('.language-switch-en');
 		const element = document.querySelector('html');
 		const allSliders = document.querySelector('.swiper-container');
-		switchToAr.addEventListener('click', () => {
-			document.body.className = 'ar';
-			element.setAttribute('dir', 'rtl');
-			element.setAttribute('lang', 'ar');
-			switchToEn.classList.toggle('hidden');
-			switchToAr.classList.add('hidden');
-			allSliders.setAttribute('dir', 'rtl');
-			this.destroySliders();
-			this.activateSliders();
-		});
-		switchToEn.addEventListener('click', () => {
-			document.body.className = 'en';
-			element.setAttribute('dir', 'ltr');
-			element.setAttribute('lang', 'en');
-			switchToAr.classList.toggle('hidden');
-			switchToEn.classList.add('hidden');
-			allSliders.setAttribute('dir', 'ltr');
-			this.destroySliders();
-			this.activateSliders();
-		});
+		if (switchToAr) {
+			switchToAr.addEventListener('click', () => {
+				document.body.className = 'ar';
+				element.setAttribute('dir', 'rtl');
+				element.setAttribute('lang', 'ar');
+				switchToEn.classList.toggle('hidden');
+				switchToAr.classList.add('hidden');
+				allSliders.setAttribute('dir', 'rtl');
+				this.destroySliders();
+				this.activateSliders();
+			});
+		}
+		if (switchToEn) {
+			switchToEn.addEventListener('click', () => {
+				document.body.className = 'en';
+				element.setAttribute('dir', 'ltr');
+				element.setAttribute('lang', 'en');
+				switchToAr.classList.toggle('hidden');
+				switchToEn.classList.add('hidden');
+				allSliders.setAttribute('dir', 'ltr');
+				this.destroySliders();
+				this.activateSliders();
+			});
+		}
 	}
 	destroySliders() {
 		var mySwiper = document.querySelector('.swiper-container').swiper;
@@ -220,14 +224,32 @@ class App {
 		Swiper.use([Navigation, Pagination, Thumbs]);
 		if (document.querySelector('.main-slider-wrapper')) {
 			new Swiper('.main-slider-wrapper', {
-				slidesPerView: '1',
+				slidesPerView: '2',
 				slideToClickedSlide: true,
+				on: {
+					reachEnd: function () {
+						this.snapGrid = [...this.slidesGrid];
+					},
+				},
 				fadeEffect: {
 					crossFade: true,
 				},
 				navigation: {
 					nextEl: '.swiper-button-next',
 					prevEl: '.swiper-button-prev',
+				},
+				breakpoints: {
+					320: {
+						slidesPerView: 1,
+						centerMode: true,
+					},
+					768: {
+						slidesPerView: 1,
+						centerMode: true,
+					},
+					780: {
+						slidesPerView: 3,
+					},
 				},
 			});
 		}
@@ -258,9 +280,9 @@ class App {
 				slidesPerView: '1',
 				slideToClickedSlide: true,
 				loop: true,
-				autoplay: {
-					delay: 5000,
-				},
+				// autoplay: {
+				// 	delay: 5000,
+				// },
 				fadeEffect: {
 					crossFade: true,
 				},
@@ -279,7 +301,6 @@ class App {
 		}
 		if (document.querySelector('.about-slider')) {
 			var items = document.querySelectorAll('.timeline-item');
-			console.log('ITEMS', items);
 			new Swiper('.about-slider', {
 				slidesPerView: '1',
 				slideToClickedSlide: true,
@@ -306,13 +327,10 @@ class App {
 		}
 		if (
 			window.matchMedia('(max-width: 767px)').matches &&
-			document.querySelector('.grid-banner-wrapper-slider')
+			document.querySelector('.main-slider-wrapper')
 		) {
-			new Swiper('.grid-banner-wrapper-slider', {
+			new Swiper('.main-slider-wrapper', {
 				slidesPerView: 'auto',
-				loop: 'true',
-				spaceBetween: 20,
-				centeredSlides: true,
 			});
 		}
 	}
